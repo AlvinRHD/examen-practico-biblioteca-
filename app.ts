@@ -54,10 +54,10 @@ class Biblioteca extends EventEmitter {
 
 // PARTE 3: CLASES OYENTES
 class NotificadorBiblioteca {
-    notificarNuevoLibro(l: Libro) { console.log(`📘 Nuevo libro: ${l.titulo}`); }
-    notificarPrestamo(l: Libro) { console.log(`✅ Préstamo: ${l.titulo}`); }
-    notificarNoDisponible(l: Libro) { console.warn(`❌ Agotado: ${l?.titulo}`); }
-    notificarDevolucion(l: Libro) { console.log(`🔄 Devuelto: ${l.titulo}`); }
+    notificarNuevoLibro(l: Libro) { console.log(`Nuevo libro: ${l.titulo}`); }
+    notificarPrestamo(l: Libro) { console.log(`Préstamo: ${l.titulo}`); }
+    notificarNoDisponible(l: Libro) { console.warn(`Agotado: ${l?.titulo}`); }
+    notificarDevolucion(l: Libro) { console.log(`Devuelto: ${l.titulo}`); }
 }
 
 class GestorUIBiblioteca {
@@ -151,7 +151,7 @@ document.getElementById("checkDisponibles")?.addEventListener("change", (e) => {
     ui.renderizarLibros(checked ? biblio.getLibros().filter(l => l.disponible) : biblio.getLibros());
 });
 
-console.log("📚 Sistema de Gestión de Biblioteca UNIVO iniciado");
+console.log("Sistema de Gestión de Biblioteca UNIVO iniciado");
 
 // DATOS DE PRUEBA
 const librosIniciales = [
