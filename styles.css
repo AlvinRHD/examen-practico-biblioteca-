@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #f2f2f2;
+    color: #222;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.contador span {
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.mensaje {
+    text-align: center;
+    padding: 8px;
+    font-weight: bold;
+    min-height: 15px;
+}
+
+.mensaje.exito {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.mensaje.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.panel-formulario {
+    background: white;
+    border-radius: 6px;
+    padding: 15px 20px;
+    width: 280px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.panel-formulario label {
+    display: block;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #555;
+}
+
+.panel-formulario input,
+.panel-formulario select {
+    width: 100%;
+    padding: 6px;
+    margin-top: 3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.panel-formulario button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 8px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.panel-catalogo {
+    flex: 1;
+}
+
+.filtros {
+    background: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.filtros button {
+    padding: 6px 10px;
+    border: 1px solid #2c3e50;
+    background: white;
+    color: #2c3e50;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contenedor-libros {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 15px;
+}
+
+.tarjeta-libro {
+    background: white;
+    border-radius: 6px;
+    padding: 12px 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta-libro h3 {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+.tarjeta-libro p {
+    margin: 3px 0;
+    font-size: 13px;
+}
+
+.acciones {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.acciones button {
+    flex: 1;
+    padding: 5px;
+    font-size: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+
+.btn-prestamo {
+    background-color: #2980b9;
+}
+
+.btn-devolucion {
+    background-color: #27ae60;
+}
+
+.btn-favorito {
+    background-color: #e67e22;
+}

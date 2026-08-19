@@ -1,0 +1,12 @@
+{
+  "name": "examen-practico-biblioteca",
+  "version": "1.0.0",
+  "description": "lab poe",
+  "main": "app.js",
+  "scripts": {
+    "start": "tsc -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

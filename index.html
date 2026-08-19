@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca UNIVO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Biblioteca Central - UNIVO</h1>
+        <div class="contador">
+            <span>Total: <span id="contadorTotal">0</span></span>
+            <span>Disponibles: <span id="contadorDisponibles">0</span></span>
+        </div>
+    </header>
+
+    <div id="areaMensajes" class="mensaje"></div>
+
+    <main>
+        <section class="panel-formulario">
+            <h2>Agregar libro</h2>
+            <form id="formLibro">
+                <label for="titulo">Título</label>
+                <input type="text" id="titulo" required>
+
+                <label for="autor">Autor</label>
+                <input type="text" id="autor" required>
+
+                <label for="categoria">Categoría</label>
+                <select id="categoria">
+                    <option value="CIENCIA">Ciencia</option>
+                    <option value="LITERATURA">Literatura</option>
+                    <option value="HISTORIA">Historia</option>
+                    <option value="TECNOLOGIA">Tecnología</option>
+                    <option value="ARTE">Arte</option>
+                </select>
+
+                <label for="anio">Año</label>
+                <input type="number" id="anio" required>
+
+                <label for="ejemplares">Ejemplares</label>
+                <input type="number" id="ejemplares" min="1" required>
+
+                <button type="submit">Agregar libro</button>
+            </form>
+        </section>
+
+        <section class="panel-catalogo">
+            <div class="filtros">
+                <label for="filtroCategoria">Filtrar por categoría</label>
+                <select id="filtroCategoria">
+                    <option value="TODAS">Todas</option>
+                    <option value="CIENCIA">Ciencia</option>
+                    <option value="LITERATURA">Literatura</option>
+                    <option value="HISTORIA">Historia</option>
+                    <option value="TECNOLOGIA">Tecnología</option>
+                    <option value="ARTE">Arte</option>
+                </select>
+
+                <button id="btnOrdenTitulo">Ordenar por título</button>
+                <button id="btnOrdenAutor">Ordenar por autor</button>
+
+                <label>
+                    <input type="checkbox" id="checkDisponibles">
+                    Solo disponibles
+                </label>
+            </div>
+
+            <div id="contenedorLibros" class="contenedor-libros"></div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
